@@ -43,13 +43,5 @@ bit(32) 用于存储IP地址，只占4字节，应该是最省空间的选择
 例如：bit(6) 存入 b'101'，其实是按照00101来存储，不足的会在左边补零，读取出来视不同客户端也会补零
 
 4.浮点类型
-float与double
-其小数点位数和总位数的关系与DEMICAL相似。浮点类型的数值是不精确的，需要精确计算的数值不建议设置为浮点型
-例如：float(7,4) 存入9999.00009,小数位超出1位，其他的类型都
-
-*/
-CREATE TABLE test (c1 float(10,2),c2 decimal(10,2));
-insert into test values(131072.32, 131072.32);
-select * from test;
-
++
 drop database testdb;
