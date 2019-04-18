@@ -9,3 +9,6 @@ insert into test (name) values('zhangfei'), ('liubei'), ('zhugeliang'), ('caocao
 select * from test;
 
 .schema test
+
+'导出数据库命令'
+.dump
