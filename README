@@ -1,3 +1,4 @@
-MySQL
+SQL数据库包括SQlite3和MySQL
 
-SQlite3
+key-value数据库包括redis和memcache
+
