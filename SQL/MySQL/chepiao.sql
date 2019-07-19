@@ -27,4 +27,6 @@ delimiter ;
 
 call InsertProc();
 
+SHOW INDEX FROM chepiao; \G
+
 drop database testdb;
