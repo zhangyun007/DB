@@ -1,0 +1,34 @@
+windows下mysqld不能启动的解决方案：
+
+1. 可能缺少my.ini和data/目录，
+
+
+my.ini文件如下，注意要修改basedir和datadir：
+
+[mysqld]
+basedir ="C:\pigkang\软件\mysql\mysql-8.0.12-winx64"
+datadir ="C:\pigkang\软件\mysql\mysql-8.0.12-winx64\data"
+port=3333
+server_id =10
+character-set-server=gbk
+character_set_filesystem=gbk
+[client]
+port=3333
+default-character-set=gbk
+[mysqld_safe]
+timezone="CST"
+[mysql]
+default-character-set=utf8
+
+然后新建一个data目录，运行，mysqld --initialize，到控制面板/管理工具/计算机管理里找到mysql启动，或者运行net start mysql
+
+
+
+
+lazarus制作数据库程序需要的控件：
+
+TDBGrid
+TDatasource
+TSQLQuery
+TMysqlConnection57
+TSQLTranscation(可能不需要？)
