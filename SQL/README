@@ -6,6 +6,7 @@ windows下mysqld不能启动的解决方案：
 my.ini文件如下，注意要修改basedir和datadir：
 
 [mysqld]
+skip-grant-tables
 basedir ="C:\pigkang\软件\mysql\mysql-8.0.12-winx64"
 datadir ="C:\pigkang\软件\mysql\mysql-8.0.12-winx64\data"
 port=3333
