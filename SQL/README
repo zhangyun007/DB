@@ -22,14 +22,3 @@ timezone="CST"
 default-character-set=utf8
 
 然后新建一个data目录，运行，mysqld --initialize，到控制面板/管理工具/计算机管理里找到mysql启动，或者运行net start mysql
-
-
-
-
-lazarus制作数据库程序需要的控件：
-
-TDBGrid
-TDatasource
-TSQLQuery
-TMysqlConnection57
-TSQLTranscation(可能不需要？)
