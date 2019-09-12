@@ -14,7 +14,12 @@ password：	新创建用户的登陆数据库密码，如果没密码可以不�
 *
 */
 
-create user zhangsan identified by 'zhangsan';
+create user 'drupal'@'%' identified by 'drupal';
+create user 'drupal'@127.0.0.1 identified by 'drupal';
+create user 'drupal'@localhost identified by 'drupal';
 select * from mysql.user;
-DROP USER zhangsan@'%';
-select * from mysql.user;
+
+grant all privileges on drupal.* to drupal@'%' identified by 'drupal';
+flush privileges;
+
+DROP USER drupal@'%';
